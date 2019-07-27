@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="wl-itmuch-search" />
+        <module name="wl-itmuch-rest" />
+        <module name="wl-itmuch-manager-dao" />
+        <module name="wl-itmuch-portal" />
+        <module name="wl-itmuch-manager-interface" />
+        <module name="wl-itmuch-manager-service" />
+        <module name="wl-itmuch-manager-pojo" />
+        <module name="wl-itmuch-common" />
+        <module name="wl-itmuch-manager-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="wl-itmuch-common" target="1.8" />
+      <module name="wl-itmuch-manager" target="1.8" />
+      <module name="wl-itmuch-manager-dao" target="1.8" />
+      <module name="wl-itmuch-manager-interface" target="1.8" />
+      <module name="wl-itmuch-manager-pojo" target="1.8" />
+      <module name="wl-itmuch-manager-service" target="1.8" />
+      <module name="wl-itmuch-manager-web" target="1.8" />
+      <module name="wl-itmuch-parent" target="1.8" />
+      <module name="wl-itmuch-portal" target="1.8" />
+      <module name="wl-itmuch-rest" target="1.8" />
+      <module name="wl-itmuch-search" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

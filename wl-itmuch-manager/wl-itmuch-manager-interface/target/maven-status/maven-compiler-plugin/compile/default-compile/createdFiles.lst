@@ -1,0 +1,8 @@
+com\osyunge\service\ContentService.class
+com\osyunge\service\ItemService.class
+com\osyunge\service\TbItemDescService.class
+com\osyunge\service\ItemParamItemService.class
+com\osyunge\service\ItemCatService.class
+com\osyunge\service\PictureService.class
+com\osyunge\service\ItemContentCategoryService.class
+com\osyunge\service\ItemParamService.class

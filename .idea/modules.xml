@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-common/wl-itmuch-common.iml" filepath="$PROJECT_DIR$/wl-itmuch-common/wl-itmuch-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager.iml" filepath="$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-dao/wl-itmuch-manager-dao.iml" filepath="$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-dao/wl-itmuch-manager-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-interface/wl-itmuch-manager-interface.iml" filepath="$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-interface/wl-itmuch-manager-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-pojo/wl-itmuch-manager-pojo.iml" filepath="$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-pojo/wl-itmuch-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-service/wl-itmuch-manager-service.iml" filepath="$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-service/wl-itmuch-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-web/wl-itmuch-manager-web.iml" filepath="$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-web/wl-itmuch-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-parent/wl-itmuch-parent.iml" filepath="$PROJECT_DIR$/wl-itmuch-parent/wl-itmuch-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-portal/wl-itmuch-portal.iml" filepath="$PROJECT_DIR$/wl-itmuch-portal/wl-itmuch-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-rest/wl-itmuch-rest.iml" filepath="$PROJECT_DIR$/wl-itmuch-rest/wl-itmuch-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wl-itmuch-search/wl-itmuch-search.iml" filepath="$PROJECT_DIR$/wl-itmuch-search/wl-itmuch-search.iml" />
+    </modules>
+  </component>
+</project>

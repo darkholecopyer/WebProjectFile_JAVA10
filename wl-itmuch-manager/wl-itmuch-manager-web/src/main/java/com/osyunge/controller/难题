@@ -1,0 +1,2 @@
+1在修改商品时，没有看到item-edit.jsp的json数组，比如id的赋值，现在获取的是null
+目前已知的是获取input的值，可是id没有input，desc也没有。

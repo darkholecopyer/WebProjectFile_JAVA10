@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="wl-itmuch-manager-web:war">
+    <output-path>$PROJECT_DIR$/wl-itmuch-manager/wl-itmuch-manager-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>wl-itmuch-manager-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="wl-itmuch-manager-web.war">
+      <element id="artifact" artifact-name="wl-itmuch-manager-web:war exploded" />
+    </root>
+  </artifact>
+</component>

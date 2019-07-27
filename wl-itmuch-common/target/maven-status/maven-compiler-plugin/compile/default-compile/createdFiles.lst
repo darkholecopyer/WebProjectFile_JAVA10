@@ -1,0 +1,12 @@
+com\osyunge\dataobject\EasyUIDataGridResult.class
+com\osyunge\dataobject\ItemCatResult.class
+com\osyunge\utils\HttpClientUtil.class
+com\osyunge\dataobject\PicResult.class
+com\osyunge\utils\FastDFSClient.class
+com\osyunge\dataobject\EasyUITreeNode.class
+com\osyunge\dataobject\SearchResult.class
+com\osyunge\dataobject\Item.class
+com\osyunge\dataobject\CatNode.class
+com\osyunge\dataobject\FCResult.class
+com\osyunge\utils\JsonUtils.class
+com\osyunge\utils\IDUtils.class

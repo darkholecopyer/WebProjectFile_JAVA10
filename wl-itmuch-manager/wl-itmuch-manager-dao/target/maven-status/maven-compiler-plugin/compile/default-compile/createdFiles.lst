@@ -1,0 +1,11 @@
+com\osyunge\mapper\TbOrderShippingMapper.class
+com\osyunge\mapper\TbContentMapper.class
+com\osyunge\mapper\TbContentCategoryMapper.class
+com\osyunge\mapper\TbOrderMapper.class
+com\osyunge\mapper\TbItemParamMapper.class
+com\osyunge\mapper\TbItemMapper.class
+com\osyunge\mapper\TbItemCatMapper.class
+com\osyunge\mapper\TbUserMapper.class
+com\osyunge\mapper\TbItemParamItemMapper.class
+com\osyunge\mapper\TbOrderItemMapper.class
+com\osyunge\mapper\TbItemDescMapper.class
