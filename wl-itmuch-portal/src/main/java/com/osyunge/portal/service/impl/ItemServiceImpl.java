@@ -70,8 +70,9 @@ public class ItemServiceImpl implements ItemService {
         try {
             String json = HttpClientUtil.doGet(REST_BASE_URL + ITEM_INFO_URL + itemId);
             //把json转换为对象
-            FCResult fcResult = FCResult.formatToList(json, TbItemParamItem.class);
+            FCResult fcResult = FCResult.formatToPojo(json, TbItemParamItem.class);
             if (fcResult.getStatus() == 200){
+                System.out.println(fcResult.getData());
                 TbItemParamItem itemParamItem = (TbItemParamItem)fcResult.getData();
                 String paramData = itemParamItem.getParamData();
                 //生成html
