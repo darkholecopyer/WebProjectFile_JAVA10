@@ -1,10 +1,7 @@
 package com.osyunge.dataobject;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.cfg.MapperConfig;
-import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
 
 import java.util.List;
 
@@ -102,7 +99,7 @@ public class FCResult {
                     obj = MAPPER.readValue(data.asText(), clazz);
                 }
             }
-            System.out.println(jsonNode.get("status").intValue());
+            System.out.println("状态"+jsonNode.get("status").intValue());
             System.out.println(jsonNode.get("msg").asText());
             return build(jsonNode.get("status").intValue(), jsonNode.get("msg").asText(), obj);
         } catch (Exception e) {
@@ -145,5 +142,14 @@ public class FCResult {
         } catch (Exception e) {
             return null;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "FCResult{" +
+                "status=" + status +
+                ", msg='" + msg + '\'' +
+                ", data=" + data +
+                '}';
     }
 }
