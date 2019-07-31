@@ -3,18 +3,24 @@ package com.osyunge.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.osyunge.dataobject.EasyUIDataGridResult;
+import com.osyunge.dataobject.FCResult;
 import com.osyunge.mapper.TbItemMapper;
+import com.osyunge.mapper.TbItemParamItemMapper;
 import com.osyunge.pojo.TbItem;
 import com.osyunge.pojo.TbItemExample;
+import com.osyunge.pojo.TbItemParamItem;
 import com.osyunge.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 @Service
 public class ItemServiceImpl implements ItemService {
     @Autowired
     private TbItemMapper itemMapper;
+    @Autowired
+    private TbItemParamItemMapper itemParamItemMapper;
     @Override
     public TbItem selectItemInfoById(long itemid) {
         TbItemExample itemExample = new TbItemExample();
@@ -29,7 +35,6 @@ public class ItemServiceImpl implements ItemService {
         }
         return item;
     }
-    //第一个视频24分27秒
 
     @Override
     public EasyUIDataGridResult getItemList(int page, int rows) {
@@ -76,5 +81,17 @@ public class ItemServiceImpl implements ItemService {
         return itemMapper.updateByPrimaryKeySelective(tbItem);
     }
 
-
+    //添加规格参数
+    @Override
+    public FCResult insertItemParamItem(Long itemId,String itemParam){
+        //创建一个pojo
+        TbItemParamItem itemParamItem = new TbItemParamItem();
+        itemParamItem.setItemId(itemId);
+        itemParamItem.setParamData(itemParam);
+        itemParamItem.setCreated(new Date());
+        itemParamItem.setUpdated(new Date());
+        //向表中插入数据
+        itemParamItemMapper.insert(itemParamItem);
+        return FCResult.ok();
+    }
 }
