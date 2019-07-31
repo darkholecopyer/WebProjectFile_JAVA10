@@ -6,6 +6,8 @@ import com.osyunge.service.TbItemDescService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
+
 @Service
 public class TbItemDescServiceImpl implements TbItemDescService {
     @Autowired
@@ -13,9 +15,12 @@ public class TbItemDescServiceImpl implements TbItemDescService {
     @Override
     public int addItemDesc(String desc, long itemId) {
         TbItemDesc tbItemDesc = new TbItemDesc();
+        Date date = new Date();
         tbItemDesc.setItemId(itemId);
         tbItemDesc.setItemDesc(desc);
 
+        tbItemDesc.setCreated(date);
+        tbItemDesc.setUpdated(date);
         return tbItemDescMapper.insertSelective(tbItemDesc);
     }
 

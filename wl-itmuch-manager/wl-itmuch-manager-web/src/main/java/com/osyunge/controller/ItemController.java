@@ -19,9 +19,7 @@ import javax.annotation.Resource;
 import javax.jms.*;
 import java.util.Date;
 
-/**
- * 添加商品
- */
+
 @Controller
 @RequestMapping("/item")
 public class ItemController {
@@ -86,12 +84,12 @@ public class ItemController {
         return result;
     }
 
-    /*
-    * 添加商品
-    * */
+    /**
+     * 添加商品
+     */
     @RequestMapping("/save")
     @ResponseBody
-    public FCResult save(TbItem tbItem, String desc){
+    public FCResult save(TbItem tbItem, String desc,String itemParams){
         //保存图片,在PicController中已经处理了
         //获取tbItem数据存表
         Date date = new Date();
@@ -110,6 +108,7 @@ public class ItemController {
         tbItemDescService.addItemDesc(desc,itemId);
 
         //保存规格
+        itemService.insertItemParamItem(itemId,itemParams);
         //发送一个商品添加信息
         jmsTemplate.send(topicDestination, new MessageCreator() {
             @Override
